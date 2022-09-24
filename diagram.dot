@@ -1,0 +1,112 @@
+digraph G {
+        graph [
+            nodesep=0.5;
+            rankdir="LR";
+            cencentrate=true;
+            splines="spline";
+            fontname="Helvetica";
+            pad="0.2,0.2",
+            label="",
+
+        ];
+
+        node [shape=plain, fontname="Helvetica"];
+        edge [
+            dir=both,
+            fontsize=12,
+            arrowsize=0.9,
+            penwidth=1.0,
+            labelangle=32,
+            labeldistance=1.8,
+            fontname="Helvetica"
+        ];
+
+	 receipts_table [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="pink"><b>receipts_table</b></td></tr>
+        
+		<tr><td port="_id" align="left" cellpadding="5">_id <font color="grey60">object</font></td></tr>
+		<tr><td port="bonusPointsEarned" align="left" cellpadding="5">bonusPointsEarned <font color="grey60">float64</font></td></tr>
+		<tr><td port="bonusPointsEarnedReason" align="left" cellpadding="5">bonusPointsEarnedReason <font color="grey60">object</font></td></tr>
+		<tr><td port="createDate" align="left" cellpadding="5">createDate <font color="grey60">int64</font></td></tr>
+		<tr><td port="dateScanned" align="left" cellpadding="5">dateScanned <font color="grey60">int64</font></td></tr>
+		<tr><td port="finishedDate" align="left" cellpadding="5">finishedDate <font color="grey60">float64</font></td></tr>
+		<tr><td port="modifyDate" align="left" cellpadding="5">modifyDate <font color="grey60">int64</font></td></tr>
+		<tr><td port="pointsAwardedDate" align="left" cellpadding="5">pointsAwardedDate <font color="grey60">float64</font></td></tr>
+		<tr><td port="pointsEarned" align="left" cellpadding="5">pointsEarned <font color="grey60">float64</font></td></tr>
+		<tr><td port="purchaseDate" align="left" cellpadding="5">purchaseDate <font color="grey60">datetime64[ns]</font></td></tr>
+		<tr><td port="purchasedItemCount" align="left" cellpadding="5">purchasedItemCount <font color="grey60">float64</font></td></tr>
+		<tr><td port="rewardsReceiptStatus" align="left" cellpadding="5">rewardsReceiptStatus <font color="grey60">object</font></td></tr>
+		<tr><td port="totalSpent" align="left" cellpadding="5">totalSpent <font color="grey60">float64</font></td></tr>
+		<tr><td port="userId" align="left" cellpadding="5">userId <font color="grey60">object</font></td></tr>
+		<tr><td port="rewardsReceiptItemList.barcode" align="left" cellpadding="5">rewardsReceiptItemList.barcode <font color="grey60">object</font></td></tr>
+		<tr><td port="rewardsReceiptItemList.description" align="left" cellpadding="5">rewardsReceiptItemList.description <font color="grey60">object</font></td></tr>
+		<tr><td port="rewardsReceiptItemList.finalPrice" align="left" cellpadding="5">rewardsReceiptItemList.finalPrice <font color="grey60">object</font></td></tr>
+		<tr><td port="rewardsReceiptItemList.itemPrice" align="left" cellpadding="5">rewardsReceiptItemList.itemPrice <font color="grey60">object</font></td></tr>
+		<tr><td port="rewardsReceiptItemList.needsFetchReview" align="left" cellpadding="5">rewardsReceiptItemList.needsFetchReview <font color="grey60">object</font></td></tr>
+		<tr><td port="rewardsReceiptItemList.partnerItemId" align="left" cellpadding="5">rewardsReceiptItemList.partnerItemId <font color="grey60">object</font></td></tr>
+		<tr><td port="rewardsReceiptItemList.preventTargetGapPoints" align="left" cellpadding="5">rewardsReceiptItemList.preventTargetGapPoints <font color="grey60">object</font></td></tr>
+		<tr><td port="rewardsReceiptItemList.quantityPurchased" align="left" cellpadding="5">rewardsReceiptItemList.quantityPurchased <font color="grey60">float64</font></td></tr>
+		<tr><td port="rewardsReceiptItemList.userFlaggedBarcode" align="left" cellpadding="5">rewardsReceiptItemList.userFlaggedBarcode <font color="grey60">object</font></td></tr>
+		<tr><td port="rewardsReceiptItemList.userFlaggedNewItem" align="left" cellpadding="5">rewardsReceiptItemList.userFlaggedNewItem <font color="grey60">object</font></td></tr>
+		<tr><td port="rewardsReceiptItemList.userFlaggedPrice" align="left" cellpadding="5">rewardsReceiptItemList.userFlaggedPrice <font color="grey60">object</font></td></tr>
+		<tr><td port="rewardsReceiptItemList.userFlaggedQuantity" align="left" cellpadding="5">rewardsReceiptItemList.userFlaggedQuantity <font color="grey60">float64</font></td></tr>
+		<tr><td port="rewardsReceiptItemList.needsFetchReviewReason" align="left" cellpadding="5">rewardsReceiptItemList.needsFetchReviewReason <font color="grey60">object</font></td></tr>
+		<tr><td port="rewardsReceiptItemList.pointsNotAwardedReason" align="left" cellpadding="5">rewardsReceiptItemList.pointsNotAwardedReason <font color="grey60">object</font></td></tr>
+		<tr><td port="rewardsReceiptItemList.pointsPayerId" align="left" cellpadding="5">rewardsReceiptItemList.pointsPayerId <font color="grey60">object</font></td></tr>
+		<tr><td port="rewardsReceiptItemList.rewardsGroup" align="left" cellpadding="5">rewardsReceiptItemList.rewardsGroup <font color="grey60">object</font></td></tr>
+		<tr><td port="rewardsReceiptItemList.rewardsProductPartnerId" align="left" cellpadding="5">rewardsReceiptItemList.rewardsProductPartnerId <font color="grey60">object</font></td></tr>
+		<tr><td port="rewardsReceiptItemList.userFlaggedDescription" align="left" cellpadding="5">rewardsReceiptItemList.userFlaggedDescription <font color="grey60">object</font></td></tr>
+		<tr><td port="rewardsReceiptItemList.originalMetaBriteBarcode" align="left" cellpadding="5">rewardsReceiptItemList.originalMetaBriteBarcode <font color="grey60">object</font></td></tr>
+		<tr><td port="rewardsReceiptItemList.originalMetaBriteDescription" align="left" cellpadding="5">rewardsReceiptItemList.originalMetaBriteDescription <font color="grey60">object</font></td></tr>
+		<tr><td port="rewardsReceiptItemList_brandCode" align="left" cellpadding="5">rewardsReceiptItemList_brandCode <font color="grey60">object</font></td></tr>
+		<tr><td port="rewardsReceiptItemList.competitorRewardsGroup" align="left" cellpadding="5">rewardsReceiptItemList.competitorRewardsGroup <font color="grey60">object</font></td></tr>
+		<tr><td port="rewardsReceiptItemList.discountedItemPrice" align="left" cellpadding="5">rewardsReceiptItemList.discountedItemPrice <font color="grey60">object</font></td></tr>
+		<tr><td port="rewardsReceiptItemList.originalReceiptItemText" align="left" cellpadding="5">rewardsReceiptItemList.originalReceiptItemText <font color="grey60">object</font></td></tr>
+		<tr><td port="rewardsReceiptItemList.itemNumber" align="left" cellpadding="5">rewardsReceiptItemList.itemNumber <font color="grey60">object</font></td></tr>
+		<tr><td port="rewardsReceiptItemList.originalMetaBriteQuantityPurchased" align="left" cellpadding="5">rewardsReceiptItemList.originalMetaBriteQuantityPurchased <font color="grey60">float64</font></td></tr>
+		<tr><td port="rewardsReceiptItemList.pointsEarned" align="left" cellpadding="5">rewardsReceiptItemList.pointsEarned <font color="grey60">object</font></td></tr>
+		<tr><td port="rewardsReceiptItemList.targetPrice" align="left" cellpadding="5">rewardsReceiptItemList.targetPrice <font color="grey60">object</font></td></tr>
+		<tr><td port="rewardsReceiptItemList.competitiveProduct" align="left" cellpadding="5">rewardsReceiptItemList.competitiveProduct <font color="grey60">object</font></td></tr>
+		<tr><td port="rewardsReceiptItemList.originalFinalPrice" align="left" cellpadding="5">rewardsReceiptItemList.originalFinalPrice <font color="grey60">object</font></td></tr>
+		<tr><td port="rewardsReceiptItemList.originalMetaBriteItemPrice" align="left" cellpadding="5">rewardsReceiptItemList.originalMetaBriteItemPrice <font color="grey60">object</font></td></tr>
+		<tr><td port="rewardsReceiptItemList.deleted" align="left" cellpadding="5">rewardsReceiptItemList.deleted <font color="grey60">object</font></td></tr>
+		<tr><td port="rewardsReceiptItemList.priceAfterCoupon" align="left" cellpadding="5">rewardsReceiptItemList.priceAfterCoupon <font color="grey60">object</font></td></tr>
+		<tr><td port="rewardsReceiptItemList" align="left" cellpadding="5">rewardsReceiptItemList <font color="grey60">float64</font></td></tr>
+		<tr><td port="rewardsReceiptItemList.metabriteCampaignId" align="left" cellpadding="5">rewardsReceiptItemList.metabriteCampaignId <font color="grey60">object</font></td></tr>
+		</table>>];
+
+	 user_table [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="skyblue"><b>user_table</b></td></tr>
+        
+		<tr><td port="_id" align="left" cellpadding="5">_id <font color="grey60">object</font></td></tr>
+		<tr><td port="active" align="left" cellpadding="5">active <font color="grey60">bool</font></td></tr>
+		<tr><td port="createdDate" align="left" cellpadding="5">createdDate <font color="grey60">datetime64[ns]</font></td></tr>
+		<tr><td port="lastLogin" align="left" cellpadding="5">lastLogin <font color="grey60">float64</font></td></tr>
+		<tr><td port="role" align="left" cellpadding="5">role <font color="grey60">object</font></td></tr>
+		<tr><td port="signUpSource" align="left" cellpadding="5">signUpSource <font color="grey60">object</font></td></tr>
+		<tr><td port="state" align="left" cellpadding="5">state <font color="grey60">object</font></td></tr>
+		</table>>];
+
+	 brand_table [ label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="gold"><b>brand_table</b></td></tr>
+        
+		<tr><td port="_id" align="left" cellpadding="5">_id <font color="grey60">object</font></td></tr>
+		<tr><td port="barcode" align="left" cellpadding="5">barcode <font color="grey60">int64</font></td></tr>
+		<tr><td port="category" align="left" cellpadding="5">category <font color="grey60">object</font></td></tr>
+		<tr><td port="categoryCode" align="left" cellpadding="5">categoryCode <font color="grey60">object</font></td></tr>
+		<tr><td port="name" align="left" cellpadding="5">name <font color="grey60">object</font></td></tr>
+		<tr><td port="topBrand" align="left" cellpadding="5">topBrand <font color="grey60">float64</font></td></tr>
+		<tr><td port="brandCode" align="left" cellpadding="5">brandCode <font color="grey60">object</font></td></tr>
+		<tr><td port="cpg.$id.$oid" align="left" cellpadding="5">cpg.$id.$oid <font color="grey60">object</font></td></tr>
+		<tr><td port="cpg.$ref" align="left" cellpadding="5">cpg.$ref <font color="grey60">object</font></td></tr>
+		</table>>];
+
+	 receipts_table:rewardsReceiptItemList_brandCode->brand_table:brandCode [ 
+                        arrowhead=none, arrowtail=ocrow];
+
+	 receipts_table:userId->user_table:_id [ 
+                        arrowhead=none, arrowtail=ocrow];
+}
