@@ -39,7 +39,7 @@ digraph G {
 		<tr><td port="rewardsReceiptStatus" align="left" cellpadding="5">rewardsReceiptStatus <font color="grey60">object</font></td></tr>
 		<tr><td port="totalSpent" align="left" cellpadding="5">totalSpent <font color="grey60">float64</font></td></tr>
 		<tr><td port="userId" align="left" cellpadding="5">userId <font color="grey60">object</font></td></tr>
-		<tr><td port="rewardsReceiptItemList.barcode" align="left" cellpadding="5">rewardsReceiptItemList.barcode <font color="grey60">object</font></td></tr>
+		<tr><td port="rewardsReceiptItemList_barcode" align="left" cellpadding="5">rewardsReceiptItemList_barcode <font color="grey60">object</font></td></tr>
 		<tr><td port="rewardsReceiptItemList.description" align="left" cellpadding="5">rewardsReceiptItemList.description <font color="grey60">object</font></td></tr>
 		<tr><td port="rewardsReceiptItemList.finalPrice" align="left" cellpadding="5">rewardsReceiptItemList.finalPrice <font color="grey60">object</font></td></tr>
 		<tr><td port="rewardsReceiptItemList.itemPrice" align="left" cellpadding="5">rewardsReceiptItemList.itemPrice <font color="grey60">object</font></td></tr>
@@ -105,6 +105,9 @@ digraph G {
 		</table>>];
 
 	 receipts_table:rewardsReceiptItemList_brandCode->brand_table:brandCode [ 
+                        arrowhead=ocrow, arrowtail=ocrow];
+
+	 receipts_table:rewardsReceiptItemList_barcode->brand_table:barcode [ 
                         arrowhead=none, arrowtail=ocrow];
 
 	 receipts_table:userId->user_table:_id [ 
